@@ -1,0 +1,74 @@
+.container {
+  width: 100%;
+  position: fixed;
+  top: var(--banner-height);
+  height: var(--header-height);
+  padding: 10px 20px 20px;
+  background-color: var(--color-white);
+  z-index: 100;
+}
+
+.button {
+  padding: 20px 25px;
+  margin: 0 10px;
+}
+
+.logo {
+  max-width: 220px;
+  height: auto;
+}
+
+.menu {
+  border-bottom: none;
+}
+
+.desktopMenu {
+  border-bottom: none;
+}
+
+.hamburgerButton {
+  display: none;
+  font-size: 24px;
+  padding: 8px;
+}
+
+/* Mobile breakpoint */
+@media (max-width: 768px) {
+  .container {
+    padding: 0 16px;
+  }
+
+  .logo {
+    max-width: 180px;
+  }
+
+  /* Hide desktop menu on mobile */
+  .desktopMenu,
+  .button {
+    display: none;
+  }
+
+  /* Show hamburger button on mobile */
+  .hamburgerButton {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+/* Optional: Tablet breakpoint */
+@media (max-width: 1024px) and (min-width: 769px) {
+  .desktopMenu {
+    font-size: 14px;
+  }
+}
+
+/* Mobile menu styling */
+.mobileMenu {
+  border-right: none;
+}
+
+/* Optional: Customize drawer */
+.mobileDrawer :global(.ant-drawer-body) {
+  padding: 0;
+}

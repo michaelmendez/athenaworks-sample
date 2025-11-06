@@ -1,0 +1,11 @@
+.banner {
+  padding: 0.5rem 1rem;
+  width: 100%;
+}
+
+.actions {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-sm);
+  flex-shrink: 0;
+}

@@ -1,0 +1,53 @@
+@import "antd/dist/reset.css";
+
+:root {
+  --banner-height: 50px;
+  --header-height: 80px;
+
+  --spacing-sm: 1rem;
+  --spacing-lg: 3rem;
+  --spacing-2xl: 15rem;
+
+  --container-max-width: 1400px;
+
+  --color-primary: #6b5dd3;
+  --color-black: #000000;
+  --color-white: #ffffff;
+  --color-text: #333333;
+
+  --letter-spacing-xl: 6px;
+  --letter-spacing-lg: 4px;
+  --letter-spacing-md: 3px;
+}
+
+/* Responsive spacing overrides */
+@media (max-width: 768px) {
+  :root {
+    --spacing-lg: 1.5rem;
+    --spacing-2xl: 2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  :root {
+    --spacing-sm: 0.75rem;
+    --spacing-lg: 1rem;
+    --spacing-2xl: 1.5rem;
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Work Sans", sans-serif;
+  font-weight: 700;
+}
